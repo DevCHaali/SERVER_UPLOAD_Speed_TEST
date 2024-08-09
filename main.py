@@ -16,8 +16,8 @@ def allowed_file(filename):
 @app.route('/')
 def hello():
     return "<h1> Hello , this is api web for test upload .</h1>"
-@app.route('/upload', methods=['POST'])
 
+@app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return 'No file part', 400
@@ -34,4 +34,4 @@ def upload_file():
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
-    app.run(debug=True)
+    app.run(debug=True, port=4000)
