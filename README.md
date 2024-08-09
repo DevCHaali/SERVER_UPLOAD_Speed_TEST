@@ -18,8 +18,8 @@ This is a simple Flask-based API that allows users to upload files to a server. 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/yourusername/SERVER_UPLOAD_Speed_TEST.git
+   cd SERVER_UPLOAD_Speed_TEST
    ```
 
 2. **Create a virtual environment (optional but recommended):**
@@ -49,14 +49,14 @@ This is a simple Flask-based API that allows users to upload files to a server. 
    python app.py
    ```
 
-   The server will start on `http://127.0.0.1:5000/`.
+   The server will start on `http://127.0.0.1:4000/`.
 
 2. **Upload a file:**
 
    - Send a `POST` request to `/upload` with a file using a tool like Postman or `curl`:
 
      ```bash
-     curl -X POST -F 'file=@/path/to/your/file.png' http://127.0.0.1:5000/upload
+     curl -X POST -F 'file=@/path/to/your/file.png' http://127.0.0.1:4000/upload
      ```
 
    - The API will return a success message if the file is valid and successfully uploaded:
